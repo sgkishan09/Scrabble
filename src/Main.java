@@ -1,9 +1,9 @@
+import java.util.regex.*;
 
 public class Main {
 	public static void main(String[] args) {
-		// System.out.println(Util.getMaxWord("CATZ"));
-		// System.out.println(Util.isExistWord(" "));
-		String word = Util.getMaxWord("AAAAAASWIZ");
-		System.out.println(word + "\t" + Util.getScore(" A B D"));
+		String word = Util.getMaxWordwithPattern("WAORCLD", "W...D");
+		System.out.println(word + "\t" + Util.getScore(word));
+
 	}
 }

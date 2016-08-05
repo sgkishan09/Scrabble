@@ -29,9 +29,7 @@ public class Rack {
 		return str;
 	}
 
-
-	public String getMaxWord()
-	{
-		return Util.getMaxWord(this.toString());
+	public String getMaxWord() {
+		return Util.getMaxWord(this.toString(), "..................");
 	}
 }

@@ -37,6 +37,12 @@ public class Word {
 	
 	public Boolean isValid()
 	{
+		if(Util.clusters.containsKey(this.toString()))
+		{
+			List<String> temp = Util.clusters.get(this.toString());
+			if(temp.contains(this.toString()))return true;
+			return false;
+		}
 		return false;
 	}
 	

@@ -2,6 +2,7 @@
 public class Main {
 	public static void main(String[] args)
 	{
-		System.out.println(Utilities.getScore('Q'));
+		System.out.println(Util.getScore('Q'));
 	}
+	
 }

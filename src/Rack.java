@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Word {
+public class Rack {
 	private List<Tile> tiles;
 	
-	public Word(String str)
+	public Rack(String str)
 	{
 		char[] letters = str.toCharArray();
 		List<Tile> constituentTiles = new ArrayList<>();
@@ -39,8 +39,8 @@ public class Word {
 	{
 		if(Util.clusters.containsKey(this.toString()))
 		{
-			List<String> temp = Util.clusters.get(this.toString());
-			if(temp.contains(this.toString()))return true;
+			List<String> temp = Util.clusters.get(Util.hash(this.toString()));
+			if(temp.contains(Util.hash(this.toString())))return true;
 			return false;
 		}
 		return false;
